@@ -36,17 +36,22 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "firebase-messaging-sw.js",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "manifest.json",
+                "input": "src/",
+                "output": "/"
               }
             ],
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -100,6 +105,16 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "firebase-messaging-sw.js",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "manifest.json",
+                "input": "src/",
+                "output": "/"
               }
             ],
             "styles": [

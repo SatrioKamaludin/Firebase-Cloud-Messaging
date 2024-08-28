@@ -1,8 +1,14 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+// Add these 3 lines
+import { environment } from '../environments/environment';
+import { initializeApp } from "firebase/app";
+
+initializeApp(environment.firebaseConfig);
 
 @NgModule({
   declarations: [
@@ -12,9 +18,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [
-    provideClientHydration()
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -10,7 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^4.19.2",
-    "firebase-admin": "^12.4.0"
+    "axios": "^1.7.5",
+    "googleapis": "^142.0.0"
   }
 }
